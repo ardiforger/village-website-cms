@@ -1,80 +1,111 @@
-# 🏛️ Website Desa Makmur
+# Village Information System
 
-**Website Resmi Pemerintah Desa Makmur** — Media informasi, transparansi, dan komunikasi modern antara Pemerintah Desa dengan masyarakat. Dibangun dengan fokus pada kecepatan dan kemudahan akses.
+A web-based village information system built with native PHP and MySQL. This project provides a simple content management system (CMS) for managing village information, news, galleries, and public service pages.
 
-## ✨ Fitur Utama (Highlight)
+> **Note**
+> This project was developed as a learning project and demonstrates CRUD operations, authentication, role-based access control, and basic content management using native PHP.
 
-### 🖥️ Frontend (Untuk Masyarakat)
+## Features
 
-Fitur yang berorientasi pada pengguna, memberikan informasi yang akurat dan mudah diakses:
+### Public Website
 
-| Status | Fitur | Deskripsi |
-| :---: | :--- | :--- |
-| ✅ | **Homepage Dinamis** | Tampilan modern dengan *carousel* gambar bergerak dan statistik desa *real-time*. |
-| ✅ | **Profil Desa Lengkap** | Halaman khusus untuk Sejarah, Visi Misi, dan Struktur Organisasi Desa. |
-| ✅ | **Berita Profesional** | Layout berita responsif yang terinspirasi dari media besar (e.g., CNN Indonesia). |
-| ✅ | **Galeri Foto** | Album foto yang terorganisir per kategori. |
-| ✅ | **Layanan Publik & Kontak** | Informasi layanan desa, Form Kontak, dan integrasi langsung ke WhatsApp. |
-| ✅ | **Responsiveness** | Desain sepenuhnya *mobile-friendly* (Bootstrap 5 Ready). |
+- Homepage with image slider
+- Village profile
+- News and announcements
+- Photo gallery
+- Public service information
+- Contact page
+- Responsive layout using Bootstrap
 
-### ⚙️ Backend Admin (Untuk Pemerintah Desa)
+### Admin Panel
 
-Sistem manajemen konten (CMS) yang kuat dan terstruktur untuk pengelola desa:
+- Authentication system
+- Role-based user access
+- News management (Create, Read, Update, Delete)
+- Gallery management
+- Village profile management
+- Homepage slider management
+- User management
 
--   **Sistem User Multi-Level (RBAC):**
-    -   **Admin** (Kepala Desa) - Akses penuh ke semua fitur dan pengaturan.
-    -   **Editor** (Sekretaris) - Kelola Berita, Galeri, dan Profil Desa.
-    -   **Author** (Bendahara) - Hanya diperbolehkan untuk mengelola Berita.
--   **Manajemen Konten:** CRUD Berita dengan *Rich Text Editor* (WYSIWYG) dan *thumbnail*.
--   **Kustomisasi Dinamis:** Kelola *carousel* homepage, edit profil desa, dan pengaturan website umum.
--   **Manajemen Pengguna:** Kontrol penuh terhadap akun administrator.
+## Tech Stack
 
-## 🛠️ Panduan Instalasi Cepat
+- PHP (Native)
+- MySQL
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
 
-Proyek ini memerlukan lingkungan *server* lokal untuk dijalankan:
+## Project Structure
 
-### 1. Kebutuhan Sistem (Requirements)
+```
+├── admin/
+├── assets/
+├── config/
+├── database/
+├── uploads/
+├── index.php
+└── README.md
+```
 
-* PHP 7.4 atau lebih tinggi
-* MySQL 5.7 atau lebih tinggi
-* Web server (Apache/Nginx)
-* Disarankan menggunakan: **Laragon / XAMPP / WAMP**
+## Installation
 
-### 2. Setup Database
+### Requirements
 
-1.  Buka phpMyAdmin atau *database client* Anda.
-2.  Buat database baru dengan nama: `website_desa`.
-3.  Import file `website_desa.sql` yang sudah disediakan ke database yang baru dibuat.
-4.  Database Anda kini sudah terisi:
-    -   Tabel struktur lengkap dan *seeder* data.
-    -   User *default* untuk pengujian.
-    -   5 contoh artikel berita.
-    -   Data profil desa awal.
+- PHP 7.4+
+- MySQL 5.7+
+- Apache or Nginx
+- XAMPP, Laragon, or WAMP
 
-### 3. Akses Panel Admin
+### Setup
 
-Panel Admin dapat diakses melalui URL:
+1. Clone this repository.
 
-`http://localhost/website_desa/admin/`
+```bash
+git clone https://github.com/yourusername/village-information-system.git
+```
 
-### 🔒 Akun Login Default (Untuk Testing)
+2. Move the project into your web server directory.
 
-Gunakan akun berikut untuk menguji berbagai level akses di sistem:
+3. Create a new MySQL database.
 
-| Username | Password | Role | Keterangan |
-| :--- | :--- | :--- | :--- |
-| **admin** | `password` | Admin | Kepala Desa (Akses Penuh) |
-| **editor** | `password` | Editor | Sekretaris Desa (Kelola Berita & Galeri) |
-| **author** | `password` | Author | Bendahara Desa (Hanya Kelola Berita) |
+4. Import the provided SQL file into the database.
 
-***Penting!*** *Segera ganti password default ini setelah instalasi berhasil untuk alasan keamanan.*
+5. Configure the database connection in the configuration file.
 
----
+6. Run the application through your local server.
 
-## 👨‍💻 Creative & Development
+## Screenshots
 
-**Dibuat dan dikembangkan oleh:**
+You can place screenshots inside the `screenshots/` folder and reference them here.
 
-### **Ardi Wirya**
+```
+screenshots/
+├── homepage.png
+├── news.png
+├── admin-dashboard.png
+└── gallery.png
+```
 
-Terima kasih telah menggunakan proyek ini!
+## Learning Objectives
+
+This project was created to practice:
+
+- PHP programming fundamentals
+- CRUD implementation
+- Authentication and authorization
+- Session management
+- Database design
+- Responsive web development
+
+## Future Improvements
+
+- Migration to Laravel
+- REST API integration
+- File storage optimization
+- Better validation and security
+- Dashboard analytics
+
+## License
+
+This project is available for educational and portfolio purposes.
