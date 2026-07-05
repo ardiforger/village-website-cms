@@ -1,0 +1,186 @@
+/* assets/css/style.css */
+:root {
+    --primary-color: #2c5aa0;
+    --secondary-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #254a8a;
+    border-color: #254a8a;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* assets/css/style.css */
+:root {
+    --primary-color: #2c5aa0;
+    --secondary-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #254a8a;
+    border-color: #254a8a;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
+.navbar-brand strong {
+    font-size: 1.2rem;
+}
+
+.navbar-brand small {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Icon Service */
+.icon-service {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px !important;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .navbar-brand small {
+        display: none;
+    }
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
